@@ -13,10 +13,10 @@ namespace Gruberooapp
         public string RestaurantName { get; set; }
         public string RestaurantEmail { get; set; }
 
-        public List<FoodItem> Menu { get; set; } = new List<FoodItem>(); 
-        private List<SpecialOffer> specialOffers = new List<SpecialOffer>();
-        private List<Order> orders = new List<Order>();
-        public Queue<Order> OrderQueue { get; set; } = new Queue<Order>();
+        //public List<FoodItem> Menu { get; set; } = new List<FoodItem>(); 
+        //private List<SpecialOffer> specialOffers = new List<SpecialOffer>();
+        //private List<Order> orders = new List<Order>();
+        //public Queue<Order> OrderQueue { get; set; } = new Queue<Order>();
 
         public Restaurant(string restid, string restname, string restemail)
         {
