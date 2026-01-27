@@ -8,13 +8,13 @@ namespace Gruberooapp
 {
     public class FoodItem
     {
-        public string Name { get; set; }         // Make sure property is Name
-        public string Description { get; set; }
-        public double Price { get; set; }        // Make sure property is double
+        public string ItemName { get; set; }         
+        public string ItemDesc { get; set; }
+        public double ItemPrice { get; set; }       
         public string Customise { get; set; }
 
-        // Constructor without Customise
-        public FoodItem(string name, string description, double price)
+        
+        public FoodItem(string itemname, string itemdesc, double itemprice, string cust)
         {
             Name = name;
             Description = description;
@@ -22,7 +22,7 @@ namespace Gruberooapp
             Customise = "";
         }
 
-        // Constructor with Customise
+        
         public FoodItem(string name, string description, double price, string customise)
         {
             Name = name;
