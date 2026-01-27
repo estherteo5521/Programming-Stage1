@@ -77,7 +77,7 @@ namespace Gruberoo
                 if (p.Length >= 5) 
                     f = new FoodItem(p[1].Trim(), p[2].Trim(), price, p[4].Trim());
                 else 
-                    f = new FoodItem(p[1].Trim(), p[2].Trim(), price); // <- no p[4] here
+                    f = new FoodItem(p[1].Trim(), p[2].Trim(), price); 
 
                 r.AddMenuItem(f);
             }
