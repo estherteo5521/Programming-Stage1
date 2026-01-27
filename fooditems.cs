@@ -22,14 +22,6 @@ namespace Gruberooapp
             Customise = "";
         }
 
-        
-        public FoodItem(string name, string description, double price, string customise)
-        {
-            Name = name;
-            Description = description;
-            Price = price;
-            Customise = customise;
-        }
 
         public override string ToString()
         {
