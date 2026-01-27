@@ -188,7 +188,7 @@ namespace Gruberoo
                     Console.WriteLine($"- {item.Name}: {item.Description} - ${item.Price:F2}");
                 }
 
-                Console.WriteLine(); // extra line between restaurants
+                Console.WriteLine(); 
             }
         }
     
