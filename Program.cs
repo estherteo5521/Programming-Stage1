@@ -13,9 +13,9 @@ namespace Gruberoo
 {
     class Program
     {
-        static List<Restaurant> restaurants = new();
-        static List<Customer> customers = new();
-        static List<Order> orders = new();
+        //static List<Restaurant> restaurants = new();
+        //static List<Customer> customers = new();
+        //static List<Order> orders = new();
 
         static void Main()
         {
@@ -25,7 +25,7 @@ namespace Gruberoo
             Console.WriteLine("Welcome to the Gruberoo Food Delivery System");
             Console.WriteLine($"{restaurants.Count} restaurants loaded!");
 
-            // OPTION 3 — NO LINQ (SAFE)
+           
             int foodItemCount = 0;
             foreach (var r in restaurants)
             {
@@ -65,7 +65,7 @@ namespace Gruberoo
             {
                 var p = line.Split(',');
 
-                if (p.Length < 4) continue; // must have at least 4 columns
+                if (p.Length < 4) continue; 
 
                 Restaurant r = restaurants.FirstOrDefault(x => x.RestaurantId == p[0].Trim());
                 if (r == null) continue;
@@ -74,9 +74,9 @@ namespace Gruberoo
 
                 FoodItem f;
 
-                if (p.Length >= 5) // if Customise column exists
+                if (p.Length >= 5) 
                     f = new FoodItem(p[1].Trim(), p[2].Trim(), price, p[4].Trim());
-                else // only 3 columns: Name, Description, Price
+                else 
                     f = new FoodItem(p[1].Trim(), p[2].Trim(), price); // <- no p[4] here
 
                 r.AddMenuItem(f);
@@ -143,25 +143,25 @@ namespace Gruberoo
                         ListAllRestaurantsAndMenu();
                         break;
                     case "2":
-                        ListAllOrders();
+                        //ListAllOrders();
                         break;
                     case "3":
-                        CreateNewOrder();
+                       // CreateNewOrder();
                         break;
                     case "4":
-                        ProcessOrders();
+                       // ProcessOrders();
                         break;
                     case "5":
-                        ModifyOrder();
+                        //ModifyOrder();
                         break;
                     case "6":
                         // Delete order
                         break;
                     case "0":
-                        Console.WriteLine("Exiting...");
+                        //Console.WriteLine("Exiting...");
                         return;
                     default:
-                        Console.WriteLine("Invalid choice. Try again.");
+                        //Console.WriteLine("Invalid choice. Try again.");
                         break;
                 }
             }
