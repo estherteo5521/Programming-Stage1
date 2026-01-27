@@ -18,7 +18,7 @@ namespace Gruberooapp
         private List<Order> orders = new List<Order>();
         public Queue<Order> OrderQueue { get; set; } = new Queue<Order>();
 
-        public Restaurant(string id, string name, string email)
+        public Restaurant(string restid, string restname, string restemail)
         {
             RestaurantId = id;
             RestaurantName = name;
