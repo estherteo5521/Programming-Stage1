@@ -1,4 +1,11 @@
-﻿using System;
+﻿//==========================================================
+// Student Number : S10275496C
+// Student Name : Esther Teo
+// Partner Name : Jia xuan 
+//==========================================================
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
