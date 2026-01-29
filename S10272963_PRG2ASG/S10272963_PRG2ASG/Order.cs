@@ -38,15 +38,17 @@ namespace S10272963_PRG2ASG
             orderTotal = total + 5.00;
             return orderTotal;
         }
-
-        public override string ToString()
+        public void AddOrderedFoodItems(Order order)
         {
-            return base.ToString();
+            return 0;
         }
-        
         public void DisplayOrderedFoodItems()
         {
             return 0;
+        }
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
