@@ -23,7 +23,7 @@ namespace S10272963_PRG2ASG
 
         public double CalculateSubtotal ()
         {
-            subTotal = qtyOrdered * itemPrice;
+            //subTotal = qtyOrdered * itemPrice;
             return subTotal;
         }
 
