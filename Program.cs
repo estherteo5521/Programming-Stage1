@@ -61,7 +61,7 @@ namespace Gruberoo
             }
 
             // ===== Load Food Items =====
-            foreach (var line in File.ReadAllLines("fooditems.csv").Skip(1))
+            foreach (var line in File.ReadAllLines("fooditems-copy.csv").Skip(1))
             {
                 var p = line.Split(',');
 
