@@ -108,7 +108,7 @@ namespace Gruberoo
                 switch (choice)
                 {
                     case "1":
-                        ListAllRestaurantsAndMenu();
+                        //ListAllRestaurantsAndMenu();
                         break;
                     case "2":
                         //ListAllOrders();
@@ -135,37 +135,12 @@ namespace Gruberoo
             }
         }
 
-        // ================= OPTION 1 =================
-        static void ListAllRestaurantsAndMenu()
-        {
-            Console.WriteLine("All Restaurants and Menu Items");
-            Console.WriteLine("==============================");
-
-            foreach (var r in restaurants)
-            {
-                Console.WriteLine($"Restaurant: {r.RestaurantName} ({r.RestaurantId})");
-
-                if (r.Menu.Count == 0)
-                {
-                    Console.WriteLine("- No menu items available");
-                    continue;
-                }
-
-                foreach (var item in r.Menu)
-                {
-                    Console.WriteLine($"- {item.Name}: {item.Description} - ${item.Price:F2}");
-                }
-
-                Console.WriteLine(); 
-            }
-        }
-    
 
 
 
 
 
-        
+
     }
-    }
+}
 
