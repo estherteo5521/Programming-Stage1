@@ -85,38 +85,10 @@ namespace Gruberoo
 
         }
 
-        // ================= LOAD PART 2 =================
-        // Customers + Orders
+        //// ================= LOAD PART 2 =================
+        //// Customers + Orders
 
-        static void LoadCustomersAndOrders()
-        {
-            foreach (var line in File.ReadAllLines("customers.csv").Skip(1))
-            {
-                var p = line.Split(',');
-                customers.Add(new Customer(p[0], p[1]));
-            }
-
-            foreach (var line in File.ReadAllLines("orders.csv").Skip(1))
-            {
-                var p = line.Split(',');
-
-                int orderId = int.Parse(p[0]);
-                string email = p[1];
-                string restId = p[2];
-                string status = p[5];
-
-                Customer c = customers.FirstOrDefault(x => x.EmailAddress == email);
-                Restaurant r = restaurants.FirstOrDefault(x => x.RestaurantId == restId);
-
-                if (c == null || r == null) continue;
-
-                Order o = new Order(orderId, status);
-
-                orders.Add(o);
-                c.Orders.Add(o);
-                r.OrderQueue.Enqueue(o);
-            }
-        }
+        
 
         // ================= MENU =================
 
