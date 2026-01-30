@@ -85,8 +85,6 @@ namespace Gruberoo
 
         }
 
-        //// ================= LOAD PART 2 =================
-        //// Customers + Orders
 
         
 
