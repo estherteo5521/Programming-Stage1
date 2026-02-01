@@ -2,6 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/menu.cs
 /.vs
 /S10272963_PRG2ASG/.vs/S10272963_PRG2ASG/v17
 /S10272963_PRG2ASG/.vs/S10272963_PRG2ASG/FileContentIndex
