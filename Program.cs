@@ -129,7 +129,7 @@ namespace Gruberoo
                         //Console.WriteLine("Exiting...");
                         return;
                     default:
-                        //Console.WriteLine("Invalid choice. Try again.")
+                        //Console.WriteLine("Invalid choice. Try again.");
                         break;
                 }
             }
