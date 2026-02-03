@@ -26,8 +26,6 @@ namespace S10272963_PRG2ASG
             //subTotal = qtyOrdered * itemPrice;
             return subTotal;
         }
-
-       
     }
 }
 
