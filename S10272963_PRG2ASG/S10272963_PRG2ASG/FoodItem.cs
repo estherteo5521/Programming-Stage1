@@ -13,11 +13,11 @@ namespace S10272963_PRG2ASG
 {
     abstract class FoodItem
     {
-        public string itemName {  get; set; }
+        public string itemName { get; set; }
         public string itemDesc { get; set; }
         public string itemPrice { get; set; }
         public string customise { get; set; }
-        public FoodItem (string itemname, string itemdesc, string itemprice,string Customise)
+        public FoodItem(string itemname, string itemdesc, string itemprice, string Customise)
         {
             itemName = itemname;
             itemDesc = itemdesc;
@@ -26,7 +26,7 @@ namespace S10272963_PRG2ASG
         }
         public override string ToString()
         {
-            return "Food item" + itemName + itemDesc + itemPrice + customise;
+            return "Food item:" + itemName + itemDesc + itemPrice + customise;
         }
     }
 }

@@ -32,23 +32,29 @@ namespace S10272963_PRG2ASG
             orderPaymentMethod = orderpaymentmethod;
             orderPaid = orderpaid;
         }
+        public List <Order> orderitemslist { get; set; } = new.List<Order> ();
          public double CalculateOrderTotal()
         {
             double total = 0;
             orderTotal = total + 5.00;
             return orderTotal;
         }
+      
         public void AddOrderedFoodItems(Order order)
         {
-            return 0;
+            orderitemslist.Add (order);
+        }
+        public bool RemoveOrderedFoodItem (Order order)
+        {
+            orderitemslist.Remove (order);
         }
         public void DisplayOrderedFoodItems()
         {
-            return 0;
+            return orderitemslist;
         }
         public override string ToString()
         {
-            return base.ToString();
+            return "Order:"+orderId + orderDateTime + orderTotal + orderStatus + deliveryDateTime + deliveryAddress + orderPaymentMethod + orderPaid;
         }
     }
 }
