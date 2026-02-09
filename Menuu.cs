@@ -44,7 +44,7 @@ namespace Gruberooapp
 
         public override string ToString()
         {
-            return $"Menu: {MenuName} ({MenuId})";
+            return $"Menu: {MenuName} ({MenuId})"
         }
     }
 }
